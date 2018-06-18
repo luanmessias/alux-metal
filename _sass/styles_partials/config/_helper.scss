@@ -1,0 +1,18 @@
+﻿// HELPER
+// Conjunto de placeholders que podem
+// ser utilizados em lugares especificos
+// ====================================================================
+//Body config
+%normalize-inputs{
+    select,
+    input[type="text"]{
+        height: auto;
+        padding: 10px;
+    }
+}
+
+// HELPER - CALLS
+// ====================================================================
+body {
+    @extend %normalize-inputs;
+}

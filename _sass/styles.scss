@@ -1,0 +1,22 @@
+// CONFIGURATION
+// ====================================================================
+@import "styles_partials/config/mixins";
+@import "styles_partials/config/config";
+@import "styles_partials/config/colors";
+@import "styles_partials/config/fonts";
+@import "styles_partials/config/helper";
+@import "styles_partials/config/angularAnimate";
+
+// COMPONENTS
+// ====================================================================
+@import "styles_partials/components/buttons";
+@import "styles_partials/components/header";
+@import "styles_partials/components/stickFooter";
+@import "styles_partials/components/footer";
+@import "styles_partials/components/localizacao";
+@import "styles_partials/components/contato";
+
+// PAGES
+// ====================================================================
+@import "styles_partials/pages/home";
+@import "styles_partials/pages/page";
