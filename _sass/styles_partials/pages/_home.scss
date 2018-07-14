@@ -1,23 +1,23 @@
 // HOME
 // ====================================================================
-%home-cont{
+%home-cont {
     margin-bottom: 144px;
-    @media (max-width: $res-sm) { 
-        .container-fluid,
-        .home-cards{
+    @media (max-width: $res-sm) {
+        .container-fluid, .home-cards {
             padding: 0px;
         }
-        .col-card{
+        .col-card {
             padding: 10px;
         }
     }
 }
-%home-banner{
-    .banner-home{
+
+%home-banner {
+    .banner-home {
         position: relative;
         @media (min-width: $res-md) {
-            .banner-home-back{
-                @include blur(30px); 
+            .banner-home-back {
+                @include blur(30px);
                 content: "";
                 position: absolute;
                 width: 100%;
@@ -29,10 +29,10 @@
                 background-size: cover;
                 z-index: -1;
             }
-            #carouselExampleIndicators{
-                -webkit-box-shadow: 0px 24px 29px -12px rgba(0,0,0,0);
-                -moz-box-shadow: 0px 24px 29px -12px rgba(0,0,0,0);
-                box-shadow: 0px 24px 29px -12px rgba(0,0,0,0);
+            #carouselExampleIndicators {
+                -webkit-box-shadow: 0px 24px 29px -12px rgba(0, 0, 0, 0);
+                -moz-box-shadow: 0px 24px 29px -12px rgba(0, 0, 0, 0);
+                box-shadow: 0px 24px 29px -12px rgba(0, 0, 0, 0);
                 margin-bottom: 40px;
             }
         }
@@ -48,26 +48,30 @@
             text-align: center;
             background: rgba(0, 0, 0, .5);
         }
-        @media (max-width: $res-sm) { 
+        @media (max-width: $res-sm) {
             padding: 0px;
-            .container{
+            .container {
                 padding: 0px;
-                .carousel-caption{
+                .carousel-caption {
                     display: none;
                 }
             }
         }
     }
 }
-%home-welcome{
-    .home-welcome{
+
+%home-welcome {
+    .home-welcome {
         text-align: center;
-        h1{
-            @include fonte($font-two, normal, 40px, $color-black);
+        h1 {
+            @include fonte($font-two,
+            normal,
+            40px,
+            $color-black);
             display: inline-block;
             width: auto;
             margin: 0px auto;
-            &:after{
+            &:after {
                 content: "";
                 width: 195px;
                 height: 2px;
@@ -76,28 +80,33 @@
                 margin: 5px auto;
             }
         }
-
-        span{
-            @include fonte($font-one, normal, 14px, $color-black);
+        span {
+            @include fonte($font-one,
+            normal,
+            14px,
+            $color-black);
             display: block;
             width: 80%;
             text-align: center;
             margin: 15px auto;
         }
-
     }
 }
-%home-cards{
-    .home-cards-cotainer{
+
+%home-cards {
+    .home-cards-cotainer {
         background-color: $color-blue-darkest;
     }
-    .home-cards{
-        h1{
-            @include fonte($font-two, normal, 40px, $color-white);
+    .home-cards {
+        h1 {
+            @include fonte($font-two,
+            normal,
+            40px,
+            $color-white);
             display: inline-block;
             width: auto;
             margin: 20px auto 0px auto;
-            &:after{
+            &:after {
                 content: "";
                 width: 195px;
                 height: 2px;
@@ -106,43 +115,55 @@
                 margin: 5px auto;
             }
         }
-
-        > span{
-            @include fonte($font-one, normal, 14px, $color-white);
+        >span {
+            @include fonte($font-one,
+            normal,
+            14px,
+            $color-white);
             display: block;
             width: 80%;
             text-align: center;
             margin: 15px auto;
         }
-        .col-card{
+        .col-card {
             padding: 15px;
-            .card{
+            .card {
                 background: transparent;
-                .card-title{
+                .card-title {
                     @include box-sizing();
                     @include border-radius();
-                    @include fonte($font-two, 400, 24px, $color-white);
-                    @include linear-gradient(42deg, $color-blue-light 0%, $color-blue 50%, $color-blue-dark 50.01%, $color-blue-darkest 100%);
+                    @include fonte($font-two,
+                    400,
+                    24px,
+                    $color-white);
+                    @include linear-gradient(42deg,
+                    $color-blue-light 0%,
+                    $color-blue 50%,
+                    $color-blue-dark 50.01%,
+                    $color-blue-darkest 100%);
                     margin: 0px;
                     padding: 3px 10px;
                     border: 0px;
                 }
-                .card-photos{
+                .card-photos {
                     @include box-sizing();
                     padding: 0;
-                    .img-card{
+                    .img-card {
                         margin: 10px;
-                        img{
+                        img {
                             width: 100%;
                             height: auto;
                         }
                     }
                 }
-                .card-info{
+                .card-info {
                     @include box-sizing();
-                    @include fonte($font-one, normal, 14px, $color-white);
+                    @include fonte($font-one,
+                    normal,
+                    14px,
+                    $color-white);
                     padding: 0;
-                    a{
+                    a {
                         margin: 10px 0px;
                     }
                 }
@@ -150,21 +171,28 @@
         }
     }
 }
-%home-services{
-    .servicos{
+
+%home-services {
+    .servicos {
         padding: 10px;
-        
-        .card{
+        .card {
             text-align: center;
             padding: 25px 0px;
             border: 0px;
         }
-
-        .number{
+        .number {
             @include transition;
             @include border-radius(100%);
-            @include fonte($font-two, bold, 60px, #6A6A6A);
-            @include flexbox(flex, row, nowrap, center, center, space-between);
+            @include fonte($font-two,
+            bold,
+            60px,
+            #6A6A6A);
+            @include flexbox(flex,
+            row,
+            nowrap,
+            center,
+            center,
+            space-between);
             align-self: center;
             text-align: center;
             background-color: #FFF;
@@ -172,105 +200,160 @@
             height: 110px;
             margin: 0px;
             margin-bottom: 20px;
-            &:hover{
+            &:hover {
                 background-color: #6A6A6A;
                 color: #FFF;
             }
         }
-
-        .card-title{
-            @include fonte($font-two, bold, 20px, $color-gray-dark);
+        .card-title {
+            @include fonte($font-two,
+            bold,
+            20px,
+            $color-gray-dark);
         }
-
-        .card-text{
-            @include fonte($font-one, 400, 12px, $color-gray-dark);
+        .card-text {
+            @include fonte($font-one,
+            400,
+            12px,
+            $color-gray-dark);
             text-align: justify;
             width: 80%;
             margin: 0px auto;
         }
-
     }
 }
-%home-destaques{
-    .destaques{
+
+%home-destaques {
+    .destaques {
         @include box-sizing();
         @include bgimg("bg_middle.jpg");
         background-attachment: fixed;
         width: 100%;
         padding: 20px;
         min-height: 150px;
-        .card{
+        .card {
             text-align: center;
             background: transparent;
             border: 0px;
-            img{
+            img {
                 width: 85px;
                 display: block;
                 margin: 10px auto;
             }
-            .card-title{
-                @include fonte($font-two, bold, 20px, $color-white);
+            .card-title {
+                @include fonte($font-two,
+                bold,
+                20px,
+                $color-white);
                 text-transform: uppercase;
             }
-            .card-text{
-                @include fonte($font-one, 400, 12px, $color-white);
+            .card-text {
+                @include fonte($font-one,
+                400,
+                12px,
+                $color-white);
             }
         }
     }
 }
-%home-produtos{
-    .produtos{
-        .card{
+
+%home-produtos {
+    .produtos {
+        .card {
             border: 0px;
-            .card-body{
+            .card-body {
                 padding: 10px 0px;
             }
-            .card-title{
-                @include fonte($font-two, bold, 20px, $color-blue);
-                text-transform: uppercase; 
+            .card-title {
+                @include fonte($font-two,
+                bold,
+                20px,
+                $color-blue);
+                text-transform: uppercase;
             }
-            .card-text{
-                @include fonte($font-one, 400, 12px, $color-gray-dark);
+            .card-text {
+                @include fonte($font-one,
+                400,
+                12px,
+                $color-gray-dark);
             }
         }
     }
 }
-%home-social{
-    .social{
+
+%home-social {
+    .social {
         @include box-sizing();
         @include bgimg("bg_bottom.jpg");
         background-attachment: fixed;
         width: 100%;
         padding: 50px 10px;
         min-height: 150px;
-        .socialinfo{
+        .socialinfo {
             margin: 0px auto;
             text-align: center;
-            h2{
-                @include fonte($font-one, bold, 25px, $color-white);
+            h2 {
+                @include fonte($font-one,
+                bold,
+                25px,
+                $color-white);
             }
-            span{
-                @include fonte($font-one, normal, 12px, $color-white);
+            span {
+                @include fonte($font-one,
+                normal,
+                12px,
+                $color-white);
             }
         }
-        .social-icons{
-            a{
-              margin: 10px;  
+        .social-icons {
+            a {
+                margin: 10px;
             }
-            i{
+            i {
                 font-size: 34px;
                 color: $color-white;
             }
         }
     }
 }
+
+%home-video {
+    .container-video {
+        @include bgimg("bgvideo.jpg");
+        background-size: cover;
+    }
+    .videoContainer {
+        @include transition;
+        @include box-sizing;
+        padding: 20px;
+        width: 100%;
+        
+        @media (max-width: $res-xs) {
+            height: 200px;
+        }
+        // Medium devices (tablets, 768px and up)
+        @media (max-width: $res-sm) {
+            height: 300px;
+        }
+        // Large devices (desktops, 992px and up)
+        @media (min-width: $res-md) {
+            height: 400px;
+        }
+        // Extra large devices (large desktops, 1200px and up)
+        @media (min-width: $res-xl) {
+            height: 642px;
+        }
+    }
+}
+
 // HOME - CALLS
 // ====================================================================
-body{
+body {
     @extend %home-cont;
     @extend %home-banner;
     @extend %home-services;
     @extend %home-destaques;
     @extend %home-produtos;
     @extend %home-social;
+    @extend %home-video;
 }
