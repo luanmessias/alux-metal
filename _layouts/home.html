@@ -1,5 +1,17 @@
 ---
 layout: default
+
+cards:
+    - number: "01"
+      title: "Quem Somos"
+      desc: "Medições individual e agrupada, elaboração/apresentação/execução de projetos elétricos junto a conseccionária com fornecimento de material e mão de obra."
+    - number: "02"
+      title: "Missão"
+      desc: "Elaboração de Projetos de Redes e Linhas de Distribuição em média e baixa tensão, Iluminação Pública e Ornamental (pontes, viadutos, praças, passarelas, ciclovias... ). Projetos Especiais de SPDA e AVCB."
+    - number: "03"
+      title: "Valores"
+      desc: "Viabilidade técnica, Laudos, Projeto Elétrico, Acompanhamento junto as concessionárias, fornecimento de materiais homologados conforme normas específicas e ABNT e execução. Cabines Primárias, Transformadores a Seco, Manutenção Geral e Emergencial."
+
 ---
 
 <div class="container-fluid p-0 app" ng-controller="macanController">
@@ -10,8 +22,33 @@ layout: default
         </div>
     </div>
 
+    <div class="servicos container">
+        <h1>Nossos Servicos</h1>
+        <span>Understanding steel processing Students of steel processing may be interested in our brief descriptions of each of our
+            main steel processing machines, which you can find by clicking below.</span>
+        <div class="card-group d-xl-flex justify-content-between align-items-center">
+            {% for card in layout.cards %}
+            <div class="card">
+                <div class="number">{{card.number}}</div>
+                <div class="card-body">
+                    <h5 class="card-title card-number">{{card.title}}</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content
+                        is a little bit longer.</p>
+                    <p class="card-text">
+                        <a name="" id="" class="btn btn-primary btn-alt-primary" href="#" role="button">MAIS</a>
+                    </p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
     <div class="container-fluid container-video">
         <div class="container">
+            
+            <div class="infoContainer">
+                
+            </div>
 
             <div class="videoContainer">
                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZE4_8Jbm-Pk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
