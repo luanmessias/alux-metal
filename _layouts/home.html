@@ -2,15 +2,15 @@
 layout: default
 
 cards:
-    - number: "01"
+    - icon: "fa-users"
       title: "Quem Somos"
-      desc: "Medições individual e agrupada, elaboração/apresentação/execução de projetos elétricos junto a conseccionária com fornecimento de material e mão de obra."
-    - number: "02"
+      desc: "Inicio das atividades em Janeiro de 2018, voltada no desenvolvimento de Industrias em geral,e Distribuidores a Alux Metal. está entre os produtores de perfis de alumínio. Com 1 prensa de extrusão de 7” totalmente automatizadas no estado de São Paulo"
+    - icon: "fa-bullseye"
       title: "Missão"
-      desc: "Elaboração de Projetos de Redes e Linhas de Distribuição em média e baixa tensão, Iluminação Pública e Ornamental (pontes, viadutos, praças, passarelas, ciclovias... ). Projetos Especiais de SPDA e AVCB."
-    - number: "03"
+      desc: "“Produção e comercialização de soluções de alumínio para os mercados de transporte, construção civil e industrial”"
+    - icon: "fa-star"
       title: "Valores"
-      desc: "Viabilidade técnica, Laudos, Projeto Elétrico, Acompanhamento junto as concessionárias, fornecimento de materiais homologados conforme normas específicas e ABNT e execução. Cabines Primárias, Transformadores a Seco, Manutenção Geral e Emergencial."
+      desc: "Ética nos relacionamentos e negócios <br> Sucesso em equipe e treinamento mutuo <br> Compromisso com qualidade e atendimento."
 
 ---
 
@@ -23,20 +23,13 @@ cards:
     </div>
 
     <div class="servicos container">
-        <h1>Nossos Servicos</h1>
-        <span>Understanding steel processing Students of steel processing may be interested in our brief descriptions of each of our
-            main steel processing machines, which you can find by clicking below.</span>
-        <div class="card-group d-xl-flex justify-content-between align-items-center">
+        <div class="card-group d-xl-flex justify-content-between align-items-flex-start">
             {% for card in layout.cards %}
             <div class="card">
-                <div class="number">{{card.number}}</div>
+                <div class="number"><i class="fas {{ card.icon }}"></i></i></div>
                 <div class="card-body">
                     <h5 class="card-title card-number">{{card.title}}</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content
-                        is a little bit longer.</p>
-                    <p class="card-text">
-                        <a name="" id="" class="btn btn-primary btn-alt-primary" href="#" role="button">MAIS</a>
-                    </p>
+                    <p class="card-text">{{ card.desc }}</p>
                 </div>
             </div>
             {% endfor %}

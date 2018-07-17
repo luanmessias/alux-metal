@@ -263,19 +263,16 @@
             border: 0px;
             .card-body {
                 padding: 10px 0px;
+                text-align: center;
             }
             .card-title {
-                @include fonte($font-two,
-                bold,
-                20px,
-                $color-blue);
+                @include fonte($font-two, bold, 20px, $color-blue);
                 text-transform: uppercase;
+                text-align: center;
             }
             .card-text {
-                @include fonte($font-one,
-                400,
-                12px,
-                $color-gray-dark);
+                @include fonte($font-one, 400, 12px, $color-gray-dark);
+                text-align: center !important;
             }
         }
     }
@@ -293,16 +290,11 @@
             margin: 0px auto;
             text-align: center;
             h2 {
-                @include fonte($font-one,
-                bold,
-                25px,
-                $color-white);
+                @include fonte($font-one, bold, 25px, $color-white);
             }
+
             span {
-                @include fonte($font-one,
-                normal,
-                12px,
-                $color-white);
+                @include fonte($font-one, normal, 12px, $color-white);
             }
         }
         .social-icons {
