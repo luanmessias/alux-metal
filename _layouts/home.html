@@ -12,6 +12,16 @@ cards:
       title: "Valores"
       desc: "Ética nos relacionamentos e negócios <br> Sucesso em equipe e treinamento mutuo <br> Compromisso com qualidade e atendimento."
 
+news:
+    - title: "Titulo da notícia"
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet enim vitae nunc ornare, at pretium odio cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Fusce quis elit a enim aliquam gravida eget eu quam. Maecenas tincidunt ac nisi non aliquet. "
+    - title: "Titulo da notícia"
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet enim vitae nunc ornare, at pretium odio cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Fusce quis elit a enim aliquam gravida eget eu quam. Maecenas tincidunt ac nisi non aliquet. "
+    - title: "Titulo da notícia"
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet enim vitae nunc ornare, at pretium odio cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Fusce quis elit a enim aliquam gravida eget eu quam. Maecenas tincidunt ac nisi non aliquet. "
+    - title: "Titulo da notícia"
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet enim vitae nunc ornare, at pretium odio cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Fusce quis elit a enim aliquam gravida eget eu quam. Maecenas tincidunt ac nisi non aliquet. "
+
 ---
 
 <div class="container-fluid p-0 app" ng-controller="macanController">
@@ -47,6 +57,27 @@ cards:
                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZE4_8Jbm-Pk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
             
+        </div>
+    </div>
+
+    <div class="container-fluid inpage-titles">
+        <div class="container">
+            <h1>Notícias e novidades</h1>
+        </div>
+    </div>
+
+    <div class="news container">
+        
+        <div class="card-group">
+            {% for post in site.posts %}
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ post.title }}</h5>
+                        <p class="card-text">{{ post.desc }}</p>
+                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Mais detalhes</a>
+                    </div>
+                </div>
+            {% endfor %}
         </div>
     </div>
 

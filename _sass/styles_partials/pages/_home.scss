@@ -313,6 +313,7 @@
     .container-video {
         @include bgimg("bgvideo.jpg");
         background-size: cover;
+        background-attachment: fixed;
     }
     .videoContainer {
         @include transition;
@@ -338,6 +339,43 @@
     }
 }
 
+%home-news{
+    .news-cont{
+        @include box-sizing;
+        padding: 20px;
+    }
+    .news{
+        .card-group{
+            @include flexbox(flex, row, wrap, flex-start, inherit, flex-start);
+            padding: 10px 0px;
+            
+            .card{
+                @include box-sizing;
+                padding: 10px;
+                flex: inherit;
+                margin: 10px;
+                border: 1px solid #CCC;
+                @media (max-width: $res-xs) {
+                    width: 100%;
+                }
+                // Medium devices (tablets, 768px and up)
+                @media (max-width: $res-sm) {
+                    width: calc(50% - 10px);
+                }
+                // Large devices (desktops, 992px and up)
+                @media (min-width: $res-md) {
+                    width: calc(33.333% - 10px);
+                }
+                // Extra large devices (large desktops, 1200px and up)
+                @media (min-width: $res-xl) {
+                    width: calc(25% - 20px);
+                }
+
+            }
+        }
+    }
+}
+
 // HOME - CALLS
 // ====================================================================
 body {
@@ -348,4 +386,5 @@ body {
     @extend %home-produtos;
     @extend %home-social;
     @extend %home-video;
+    @extend %home-news;
 }
