@@ -370,7 +370,9 @@
                 @media (min-width: $res-xl) {
                     width: calc(25% - 20px);
                 }
-
+                .card-text{
+                    text-align: center;
+                }
             }
         }
     }
