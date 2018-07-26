@@ -9,10 +9,10 @@ $mail->SMTPAuth = true; // Autenticação
 $mail->Username = 'webmaster@aluxmetal.com.br'; // Usuário do servidor SMTP
 $mail->Password = 'aluxmetal102030****'; // Senha da caixa postal utilizada
 
-$mail->From = "contato@aluxmetal.com.br"; 
+$mail->From = "vendas@aluxmetal.com.br"; 
 $mail->FromName = "[SITE] - Formulario de contato";
 
-$mail->AddAddress('contato@aluxmetal.com.br', 'Contato');
+$mail->AddAddress('vendas@aluxmetal.com.br', 'Contato');
 //$mail->AddAddress('e-mail@destino2.com.br');
 //$mail->AddCC('copia@dominio.com.br', 'Copia'); 
 //$mail->AddBCC('CopiaOculta@dominio.com.br', 'Copia Oculta');
