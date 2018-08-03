@@ -46,13 +46,13 @@ news:
         </div>
     </div>
 
-      <div class="container-fluid inpage-titles">
+    <div class="container-fluid inpage-titles dn">
         <div class="container">
             <h1>Notícias e novidades</h1>
         </div>
     </div>
 
-    <div class="news container">
+    <div class="news container dn">
         
         <div class="card-group">
             {% for post in site.posts %}
@@ -83,3 +83,21 @@ news:
 
 </div>
 
+
+<a id="hidden_link" data-fancybox data-animation-duration="500" data-options='{"src": "#deliveryModal", "touch": false}'  href="javascript:;"  style="display: none"></a>
+
+<div style="display:none" id="deliveryModal" class="modal">
+    <div class="modal__content">
+        <img src="{{ "/assets/img/logonews.jpg" | relative_url }}" style="max-width: 50%; display: block" alt="">
+
+        <br />
+    
+        <span> A ALUX METAL , disponibiliza em seu Portifolio ,( não consta em Catalogo) as linhas :</span><br />
+        <span>• GOLD III</span><br />
+        <span>• FACHADA ATLANTA</span><br />
+        <span>• LINHA UNIVERSAL GRADIL</span><br />
+        <span>• OUTRAS LINHAS INDUSTRIAIS , COMO BARRA CHATAS E TUBOS  REDONDOS E QUADRADOS.</span><br />
+        Consulte-nos
+    
+    </div>
+</div>
